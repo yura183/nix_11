@@ -5,14 +5,7 @@ public class FindLiture {
     public static void findLiture(String s){
 
         char[] myArray = s.replaceAll("[^^A-Za-zА-Яа-я]", "").toLowerCase().toCharArray();
-        int n = 0;
-        for(int i=0; i<myArray.length-1; i++){
-            for (int j=i+1; j<myArray.length; j++){
-                if(myArray[i] == myArray[j]){
-                    n++;
-                }
-            }
-        }
+
         int[] counter = new int[256];
 
         String str1 = String.valueOf(myArray);
