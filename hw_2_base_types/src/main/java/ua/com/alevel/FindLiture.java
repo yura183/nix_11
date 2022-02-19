@@ -9,9 +9,9 @@ public class FindLiture {
         int[] counter = new int[256];
 
         String str1 = String.valueOf(myArray);
-        int length = str1.length();
 
-        for (int i = 0; i < length; i++) {
+
+        for (int i = 0; i < str1.length(); i++) {
             counter[str1.charAt(i)]++;
         }
 
