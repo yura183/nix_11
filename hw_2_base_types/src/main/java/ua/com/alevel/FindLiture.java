@@ -2,7 +2,7 @@ package ua.com.alevel;
 
 public class FindLiture {
 
-    public static void findLiture(String s){
+    public static void findLiture(String s) {
 
         char[] myArray = s.replaceAll("[^^A-Za-zА-Яа-я]", "").toCharArray();
 
